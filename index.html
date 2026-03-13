@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>入职办理小助手</title>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; }
+    </style>
+</head>
+<body>
+<script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.19/libs/cn/index.js"></script>
+<script>
+new CozeWebSDK.WebChatClient({
+  config: {
+    bot_id: "7615922655191433279"
+  },
+  componentProps: {
+    title: "入职办理小助手"
+  },
+  auth: {
+    type: "token",
+    token: "pat_TWd17rTTv4IxU8ejE3SDygHVAlKvGYYshELJOdRmKImTDm758sxtHZiUFHjMUx7g",
+    onRefreshToken: function() {
+      return "pat_TWd17rTTv4IxU8ejE3SDygHVAlKvGYYshELJOdRmKImTDm758sxtHZiUFHjMUx7g";
+    }
+  }
+});
+</script>
+</body>
+</html>
